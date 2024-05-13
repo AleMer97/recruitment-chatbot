@@ -1,0 +1,27 @@
+Role: OPENAI TECHNICAL EXPERT / DATA
+SCIENTIST (F/M/D)
+Company: TÜV Süd
+
+AUFGABEN
+• Entwicklung und Implementierung von Machine Learning-/KI-Modellen für Anwendungen, z.B. im Bereich Natural Language Processing (NLP) oder Computer Vision, mit Schwerpunkt auf OpenAI-Technologien (LLM)
+• Enge Zusammenarbeit mit anderen Data Scientisten und TÜV SÜD Geschäftsbereichen, Fachexperten*innen, internen und externen Dienstleistern
+• Fallbasierte Bewertung und Beratung zur Verwendung
+analytischer Methoden und Ansätze (insbesondere OpenAI-Technologien) zur Verbesserung unserer Prozesse und Dienstleistungen.
+• Unterstützung von Geschäftsbereichen als interner
+Entwicklungspartner, von der Ideenfindung bis zur
+Implementierung.
+
+QUALIFIKATIONEN
+• Abgeschlossenes Masterstudium in Informatik, Mathematik, Physik oder eine vergleichbare Qualifikation mit Schwerpunkt auf Maschine Learning / Künstliche Intelligenz
+• Drei Jahre Erfahrung in der Implementierung von Maschine Learning- / KI -Modellen, einschließlich der Verwendung von OpenAI-Technologien
+• Tiefgreifende Expertise über aktuelle Methoden im Bereich ML und KI, insbesondere Large Language Models
+• Erfahrung mit Cloud-Computing-Plattformen, speziell Azure
+• Umfassende Kenntnisse relevanter Programmiersprachen, einschließlich Python
+• Gute Kenntnisse in NLP und/oder Computer Vision
+• Starke analytische Fähigkeiten und die Fähigkeit, komplexe Probleme zu lösen
+• Ausgezeichnete schriftliche und mündliche
+Kommunikationsfähigkeiten in Deutsch und Englisch
+
+WEITERE INFORMATIONEN
+Neben einem sicheren Arbeitsplatz in einer angenehmen, kollegialen Atmosphäre erwartet Sie ein spannendes und abwechslungsreiches Arbeitsumfeld bei der TÜV SÜD Digital Service GmbH. Wir bieten Ihnen die Möglichkeit, Verantwortung zu übernehmen und Ideen umzusetzen. Wir leben flache Hierarchien und ein Prinzip der offenen Tür.
+Der Austausch und die Zusammenarbeit in einem internationalen Umfeld, Weiterbildungsangebote sowie viele soziale Leistungen
