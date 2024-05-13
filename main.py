@@ -12,24 +12,25 @@ client = OpenAI(
 )
 
 def chatbot_conversation():
-    welcome = "Hello! How can I assist you today?"
+    welcome = "Willkommen zum interview."
 
     # reset_conv()
     print(" quit:\t\t to quit\n reset\t\t to reset\n verdict\t ask the bot to judge on candidate")
-    print(f"Assistant: {welcome}")
+    #print(f"Assistant: {welcome}")
+    reset_conv()
+    user_message = "Bitte stelle mir die ersten Frage."
     while True:
+        chatbot_response = get_chat_response(user_message)
+        print("Assistant: " + chatbot_response)
         user_message = input("User: ")
         if user_message.lower() == "quit":
           break
         if user_message.lower() == "reset":
           reset_conv()
-          print(f"\nAssistant: {welcome}")
+          #print(f"\nAssistant: {welcome}")
         if user_message.lower() == "verdict":
           response = judge_candidate()
-        else:
-            # Here you can add the code to get the response from the chatbot
-            chatbot_response = get_chat_response(user_message)
-            print("Assistant: " + chatbot_response)
+            
 
 
    
@@ -48,15 +49,14 @@ def judge_candidate():
   messages = load_messages()
   
   print("Verdict:")
-  Request = """-- Das Interview ist abgeschlossen --
+  verdict_request = """-- Das Interview ist abgeschlossen --
   Bewerte den Kandidaten auf seine Tauglichkeit für die Stelle und begründe deine Wahl anhand der Daten.
   """
-  #TODO: judge candidate
+  get_chat_response(verdict_request)
 
   return "Accepted"
 
 def get_chat_response(user_message):
-  #TODO:add instructions
   messages = load_messages()
   messages.append({"role":"user","content": user_message})
   #print("debug: " + str(messages))
@@ -73,9 +73,15 @@ def get_chat_response(user_message):
 
 def load_messages():
   # Load the chat history from a file
+  with open('Job.txt','r') as job_file:
+     job_description = job_file.read()
   messages = [
-     {"role": "system", "content": "Du interviewst den Nutzer zu einer Jobbeschreibung und sollst anschließend begründen können ob der Kandidat die benötigten Fähigkeiten für die Rolle besitzt. Stelle kurze und relevante Fragen. Gestallte sie als lockere Konversation."}
+     {"role": "system", "content": "Du interviewst den Nutzer zu einer Jobbeschreibung und sollst anschließend begründen können ob der Kandidat die benötigten Fähigkeiten für die Rolle besitzt. Stelle kurze und relevante Fragen, die den Kandidaten anregen mehr zu erzählen. Gestallte sie als lockere Konversation."},
+     {"role": "user", "content": job_description},
+     {"role": "assistant", "content": "Sehr gut, ich werde Ihnen nacheinander ein paar Fragen stellen und dann Ihre tauglichkeit bewerten."}
   ]
+
+
   file = 'database.json'
 
   empty = os.stat(file).st_size == 0
